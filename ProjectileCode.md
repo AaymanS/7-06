@@ -201,6 +201,7 @@ function shootButton:touch( event )
         aSingleBullet.gravityScale = 0
         aSingleBullet.id = "bullet"
         aSingleBullet:setLinearVelocity( 1500, 0 )
+	aSingleBullet.isFixedRotation = true
 
         table.insert(playerBullets,aSingleBullet)
         print("# of bullet: " .. tostring(#playerBullets))
